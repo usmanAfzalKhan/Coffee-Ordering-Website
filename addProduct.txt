@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 6</title>
+    <style> 			
+        body{
+            background-color: yellow;
+            text-align: center;
+        }
+        table, td, th
+        {
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table
+        {
+            border-collapse: collapse;
+            width: 40%;
+            margin: auto;
+        }
+
+        th, td
+        {
+            padding: 15px;
+        }
+
+        h2
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Products</h1>
+
+    <a href="index.php">Home</a> |
+    <a href="viewProducts.php">View Products</a>
+
+    <br>
+
+    <h2>Add Product</h2>
+
+    <form action="viewProducts.php" method="post">
+        <table>
+            <tr>
+                <td>Product Name:</td>
+                <td>
+                    <input type="text" name="productName">
+                </td>
+            </tr>
+            <tr>
+                <td>Product Price:</td>
+                <td>
+                    <input type="text" name="productPrice">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Add Product">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
